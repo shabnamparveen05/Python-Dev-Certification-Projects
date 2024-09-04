@@ -56,3 +56,21 @@ def create_spend_chart(categories):
         chart += "     " + "  ".join(category.name[i] if i < len(category.name) else " " for category in categories) + "  \n"
 
     return chart.rstrip("\n")
+
+
+# Sample usage to test the create_spend_chart function
+if __name__ == "__main__":
+    food = Category("Food")
+    entertainment = Category("Entertainment")
+    business = Category("Business")
+
+    food.deposit(1000, "initial deposit")
+    food.withdraw(100, "groceries")
+
+    entertainment.deposit(1000, "initial deposit")
+    entertainment.withdraw(150, "concerts")
+
+    business.deposit(1000, "initial deposit")
+    business.withdraw(200, "supplies")
+
+    print(create_spend_chart([food, entertainment, business]))
