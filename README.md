@@ -20,4 +20,4 @@ To explore the projects, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/scientific-computing-with-python.git
+  (https://github.com/shabnamparveen05/scientific-computing-with-python.git)
